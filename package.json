@@ -4,16 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "build": "npx tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/main.ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0",
+    "mongodb-memory-server": "^10.1.2",
+    "mongoose": "^8.9.2",
+    "zod": "^3.24.1"
+  },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.12.6",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^20.17.10",
+    "@types/supertest": "^6.0.2",
+    "body-parser": "^1.20.3",
     "jest": "^29.7.0",
-    "ts-jest": "^29.1.2",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.4"
   }

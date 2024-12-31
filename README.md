@@ -1,11 +1,11 @@
 ## Introduction
 
-This is boilerplate to write test using jest and typescript.
+This is basecamp backend.
 
 ## Prerequisites
 
 - Node v20
-- pnpm for package management
+- pnpm or yarn for package management
     ```
     npm install -g pnpm
     ```
@@ -19,8 +19,34 @@ This is boilerplate to write test using jest and typescript.
 pnpm install
 ```
 
-## Run test
+#### Start the Development Server
 
 ```
-pnpm test
+pnpm dev
+```
+
+#### Build the Server
+
+```
+pnpm build
+```
+
+#### To watch the Tests
+
+```
+pnpm run test:watch
+```
+
+#### To run the Tests
+
+```
+pnpm run test
+```
+
+## Setting up environment variables
+
+To load from .env file, copy the .env.example to .env and make modifications as needed.
+
+```
+cp .env.example .env
 ```
