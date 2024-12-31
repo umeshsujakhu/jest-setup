@@ -1,6 +1,6 @@
 ## Introduction
 
-This is basecamp backend.
+This is todo app backend.
 
 ## Prerequisites
 
